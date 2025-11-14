@@ -41,4 +41,6 @@ Amen.
 
     await bot.process_commands(message)
 
-bot.run("YOUR_BOT_TOKEN_HERE")
+import os
+
+bot.run(os.getenv("DISCORD_TOKEN"))
